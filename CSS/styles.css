@@ -1,0 +1,29 @@
+:root {
+    --brand-pink: #EF73AB;
+    --brand-brown: #7E4141;
+}
+
+body {
+    margin: 0;
+    position: relative;
+}
+
+.footer, 
+.top-nav {
+    background-color: var(--brand-pink);
+    width: 100vw;
+    height: 100vw;
+    border-radius: 50%;
+    margin: 0 auto;
+    position: absolute;
+}
+
+.top-nav {
+    top: 0;
+    transform: translateY(-50%);
+}
+
+.footer {
+    bottom: 0;
+    transform: translateY(50%);
+}
