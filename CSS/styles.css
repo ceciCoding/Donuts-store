@@ -3,27 +3,74 @@
     --brand-brown: #7E4141;
 }
 
+* {
+  box-sizing: border-box;
+  padding: 0;
+  border: 0;
+}
+
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
     margin: 0;
-    position: relative;
+    min-height: 100vh;
+    display: flex;
 }
 
-.footer, 
-.top-nav {
+.nav,
+.footer {
     background-color: var(--brand-pink);
     width: 100vw;
-    height: 100vw;
-    border-radius: 50%;
+    height: 50vw; 
     margin: 0 auto;
-    position: absolute;
+    padding: 1rem;
+    position: sticky;
 }
 
-.top-nav {
-    top: 0;
-    transform: translateY(-50%);
+.nav { 
+    border-radius: 0 0 50vw 50vw; 
+    position: absolute;
+    top: 0;  
 }
 
 .footer {
     bottom: 0;
-    transform: translateY(50%);
+    border-radius: 50vw 50vw 0 0; 
+    align-self: flex-end;
 }
+
+.logo > a > svg {
+    position: absolute;
+    bottom: 1rem; 
+    width: 7rem;
+}
+
+.logo a {
+    display: flex;
+    justify-content: center;
+}
+
+.social {
+    position: absolute;
+    display: flex;   
+}
+
+.social > *,
+.cart-menu > * {
+    margin-right: .5rem;
+}
+
+.cart-menu {
+    position: absolute;
+    right: 0;
+    display: flex;
+}
+
+.cart > a > svg {
+    fill: white;
+}
+
+
