@@ -1,6 +1,11 @@
 :root {
-    --brand-pink: #EF73AB;
+    --brand-main: #EF73AB;
     --brand-brown: #7E4141;
+    --brand-green: #6BCCBF;
+    --main-font: 'Roboto', sans-serif;
+    --secondary-font: 'Sansita', sans-serif;
+    font-family: var(--main-font);
+    color: var(--brand-brown);
 }
 
 * {
@@ -22,7 +27,7 @@ body {
 
 .nav,
 .footer {
-    background-color: var(--brand-pink);
+    background-color: var(--brand-main);
     width: 100vw;
     height: 50vw; 
     margin: 0 auto;
@@ -34,12 +39,6 @@ body {
     border-radius: 0 0 50vw 50vw; 
     position: absolute;
     top: 0;  
-}
-
-.footer {
-    bottom: 0;
-    border-radius: 50vw 50vw 0 0; 
-    align-self: flex-end;
 }
 
 .logo > a > svg {
@@ -71,6 +70,49 @@ body {
 
 .cart > a > svg {
     fill: white;
+    margin-right: .7rem;
 }
+
+.footer {
+    bottom: 0;
+    border-radius: 50vw 50vw 0 0; 
+    align-self: flex-end;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+} 
+
+.footer ul,
+.footer-links a {
+    color: white;
+    list-style: none;
+    text-decoration: none;
+    font-size: .5rem;
+}
+
+.footer ul a {
+    margin-top: 2rem;
+}
+
+.footer ul {
+    line-height: .9rem;
+}
+
+.foot {
+    align-self: flex-start;
+}
+
+.footer-links {
+    margin-left: 2rem;
+}
+
+.hours {
+    margin-right: 2rem;
+}
+
+.footer-links li {
+    margin-top: .9rem;
+}
+
 
 
