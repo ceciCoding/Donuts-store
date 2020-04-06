@@ -2,6 +2,7 @@
     --brand-main: #EF73AB;
     --brand-brown: #7E4141;
     --brand-green: #6BCCBF;
+    --buttons-hover: #52A297;
     --main-font: 'Roboto', sans-serif;
     --secondary-font: 'Sansita', sans-serif;
     font-family: var(--main-font);
@@ -22,7 +23,11 @@
 body {
     margin: 0;
     min-height: 100vh;
-    display: flex;
+}
+
+h1 {
+    font-family: var(--secondary-font);
+    text-align: center;
 }
 
 .nav,
@@ -32,13 +37,14 @@ body {
     height: 50vw; 
     margin: 0 auto;
     padding: 1rem;
-    position: sticky;
+    z-index: 10;
 }
 
 .nav { 
     border-radius: 0 0 50vw 50vw; 
     position: absolute;
-    top: 0;  
+    top: 0; 
+    position: sticky; 
 }
 
 .logo > a > svg {
@@ -76,7 +82,6 @@ body {
 .footer {
     bottom: 0;
     border-radius: 50vw 50vw 0 0; 
-    align-self: flex-end;
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
@@ -114,5 +119,84 @@ body {
     margin-top: .9rem;
 }
 
+main {
+    margin: 1.5rem;
+}
 
+.hero {
+    width: 100vw;
+    height: 80vh;
+    background-image: url("../Images/falling-powder.jpg");
+    background-size: cover; 
+    border-radius: 8px;
+    top: 0; 
+    transform: translateY(-50vw);
+}
+
+.about {
+    background-image: url("../Images/about-us.jpg");
+}
+
+.paragraph {
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+.welcome {
+    transform: translateY(-50vw);
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    margin: 1.5rem;
+}
+
+.btn {
+    color: #fff;
+    background-color: var(--brand-green);
+    padding: 1rem; 
+    font-size: .8rem;
+    border-radius: 30px;
+    margin-top: 1rem;
+    width: 8rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+}
+
+.btn:hover {
+    background-color: var(--buttons-hover);
+}
+
+.btn:active {
+    transform: scale(.95);
+    transition: transform .3s;
+}
+
+.choose {
+    transform: translateY(-50vw);
+    margin-top: 4.5rem;
+}
+
+.carousel {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.back-arrow,
+.forward-arrow {
+    align-self: center;
+    cursor: pointer;
+}
+
+.changing-images {
+    width: 80%;
+    margin: 1rem;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    -webkit-box-shadow: 0px 5px 12px 0px rgba(204,204,204,1);
+    -moz-box-shadow: 0px 5px 12px 0px rgba(204,204,204,1);
+    box-shadow: 0px 5px 12px 0px rgba(204,204,204,1);
+}
 
