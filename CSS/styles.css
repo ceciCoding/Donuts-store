@@ -178,9 +178,10 @@ main {
     margin-top: 4.5rem;
 }
 
-.carousel {
+.slider {
     display: flex;
     justify-content: space-evenly;
+    flex-flow: row wrap;
 }
 
 .back-arrow,
@@ -189,7 +190,7 @@ main {
     cursor: pointer;
 }
 
-.changing-images {
+.slider-items {
     width: 80%;
     margin: 1rem;
     display: flex;
@@ -199,4 +200,34 @@ main {
     -moz-box-shadow: 0px 5px 12px 0px rgba(204,204,204,1);
     box-shadow: 0px 5px 12px 0px rgba(204,204,204,1);
 }
+
+.item {
+    width: 200px;
+    height: 200px;
+}
+
+[type="text"] {
+    color: var(--brand-brown);
+}
+
+.cart-add {
+    display: flex;
+    margin-top: 1rem;
+}
+
+.cart-add > * {
+    border: 1px solid var(--brand-brown);
+    width: 1.6rem;
+    height: 1.4rem;
+    text-align: center;
+}
+
+.cart-add div:nth-child(1),
+.cart-add div:nth-child(3) {
+    cursor: pointer;
+}
+
+
+
+
 
