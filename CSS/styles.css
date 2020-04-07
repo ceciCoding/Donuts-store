@@ -153,15 +153,15 @@ main {
 .btn {
     color: #fff;
     background-color: var(--brand-green);
-    padding: 1rem; 
+    padding: .8rem; 
     font-size: .8rem;
     border-radius: 30px;
-    margin-top: 1rem;
     width: 8rem;
     text-transform: uppercase;
     cursor: pointer;
     font-weight: bold;
     border: none;
+    margin-top: 1rem;
 }
 
 .btn:hover {
@@ -173,7 +173,8 @@ main {
     transition: transform .3s;
 }
 
-.choose {
+
+.section {
     transform: translateY(-50vw);
     margin-top: 4.5rem;
 }
@@ -192,6 +193,7 @@ main {
 
 .slider-items {
     width: 80%;
+    padding: 1.5rem;
     margin: 1rem;
     display: flex;
     flex-flow: column nowrap;
@@ -202,8 +204,8 @@ main {
 }
 
 .item {
-    width: 200px;
-    height: 200px;
+    width: 170px;
+    height: 170px;
 }
 
 [type="text"] {
@@ -213,6 +215,7 @@ main {
 .cart-add {
     display: flex;
     margin-top: 1rem;
+    margin-left: .4rem;
 }
 
 .cart-add > * {
@@ -227,7 +230,48 @@ main {
     cursor: pointer;
 }
 
+.cart-add div:first-child {
+    border-right: none;
+}
 
+.cart-add div:nth-child(3) {
+    border-left: none;
+}
 
+.cart-add div:last-child {
+    background-image: url("../Images/shopping_cart-24px.svg");
+    border: none;
+    margin-left: 1.5rem;
+    background-repeat: no-repeat;
+}
 
+.why-item {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5rem;
+}
+
+.why-svg {
+    background-repeat: no-repeat;
+    height: 6rem;
+    width: 5rem;
+    margin: 1rem;
+}
+
+.cook {
+    background-image: url("../Images/cook.svg");
+}
+
+.eco {
+    background-image: url("../Images/eco.svg");
+    height: 4rem;
+    width: 3rem;
+}
+
+.money {
+    background-image: url("../Images/money.svg");
+
+}
 
