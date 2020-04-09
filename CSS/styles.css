@@ -140,7 +140,11 @@ main {
 
 .paragraph {
     text-align: center;
-    line-height: 1.5rem;
+    line-height: 1.8rem;
+}
+
+.paragraph span {
+    font-weight: bold;
 }
 
 .welcome {
@@ -300,3 +304,17 @@ main {
     margin: 0;
 }
 
+.bradcrumbs {
+    transform: translateY(-4rem); 
+}
+
+.bradcrumbs > * {
+    font-size: .5rem;
+    color: var(--brand-brown);
+    text-decoration: none;
+    display: inline;
+}
+
+.about-us {
+    transform: translateY(-15rem);
+}
