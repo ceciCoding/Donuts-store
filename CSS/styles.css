@@ -121,6 +121,7 @@ h1 {
 
 main {
     margin: 1.5rem;
+    min-height: 40vh;
 }
 
 .hero {
@@ -172,7 +173,6 @@ main {
     transform: scale(.95);
     transition: transform .3s;
 }
-
 
 .section {
     transform: translateY(-50vw);
@@ -272,6 +272,31 @@ main {
 
 .money {
     background-image: url("../Images/money.svg");
+}
 
+.stars {
+    height: 1rem;
+    width: 5.2rem;
+    margin-left: 1rem;
+    background-image: url("../Images/star.svg");    
+}
+
+.date {
+    font-size: .5rem;
+    text-align: left;
+    margin: 0;
+}
+
+.comment {
+    margin-top: 3.5rem;
+}
+
+.comment-data {
+    display: flex;
+    align-items: center;
+}
+
+.comment-data p {
+    margin: 0;
 }
 

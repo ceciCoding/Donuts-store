@@ -21,7 +21,7 @@ less.addEventListener('click', () => {
         number.value = (numberOfDonuts - 1);
         numberOfDonuts--;
     }
-})
+});
 
 function slide(container) {
     container.addEventListener('click', e => {
