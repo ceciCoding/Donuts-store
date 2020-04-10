@@ -1,3 +1,5 @@
+@import "menu.css";
+
 :root {
     --brand-main: #EF73AB;
     --brand-brown: #7E4141;
@@ -351,12 +353,13 @@ main {
     color: var(--brand-brown);
 }
 
-/* .contact-form [type="email"]:invalid {
-    color: var(--error-red);
-} */
-
 .contact-form textarea {
     color: var(--brand-brown);
     font-family: var(--main-font);
     font-size: .8rem;
+}
+
+.donut-name {
+    font-family: var(--secondary-font);
+    text-align: center;
 }

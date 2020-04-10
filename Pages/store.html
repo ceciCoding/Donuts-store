@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Roboto|Sansita&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="../CSS/styles.css">
+    <link rel="stylesheet" href="../CSS/menu.css">
     <title>Donuts Heaven</title>
 </head>
 <body>
@@ -32,7 +33,7 @@
                     <svg xmlns="http://www.w3.org/2000/svg" height="2rem" viewBox="0 0 24 24" width="2rem"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 3c0 .55.45 1 1 1h1l3.6 7.59-1.35 2.44C4.52 15.37 5.48 17 7 17h11c.55 0 1-.45 1-1s-.45-1-1-1H7l1.1-2h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.37-.66-.11-1.48-.87-1.48H5.21l-.67-1.43c-.16-.35-.52-.57-.9-.57H2c-.55 0-1 .45-1 1zm16 15c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/></svg>
                 </a>
             </div>
-            <div class="burger">
+            <div class="burger" data-open-burguer="#burger">
                 <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" viewBox="0 0 45 30"><defs><style>.a{fill:none;stroke:#fff;stroke-width:4px;}</style></defs><g transform="translate(-345.554 -23.5)"><line class="a" x2="32.446" transform="translate(345.554 25.5)"/><line class="a" x2="32.446" transform="translate(345.554 38.343)"/><line class="a" x2="32.446" transform="translate(345.554 51.186)"/></g></svg>
             </div>
         </div>
@@ -42,10 +43,120 @@
             </a>
         </div>
     </nav>
+    <div class="burger-menu" id="burger">
+        <div class="cross" data-close-button>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.89 27.89"><title>Closing cross</title><g><line x1="1.38" y1="1.92" x2="26.51" y2="25.97"/><line   x1="25.97" y1="1.38" x2="1.92" y2="26.51"/></g></svg>
+        </div>
+        <ul>
+            <li><a href="store.html">Store</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="cart.html">Cart</a></li>
+        </ul>
+    </div>
+    </div>
     <main class="main">
             <div class="bradcrumbs">
                 <a href="../index.html">Home/</a>
                 <p>Store</p>
+            </div>
+             <div class="slider">
+                <div class="slider-items">
+                    <img class="item" src="../Images/pink.jpg" alt="choose your donut or go to store">
+                    <h4 class="donut-name">Raspberries</h4>
+                    <div class="cart-add">
+                        <div class="less">-</div>
+                        <input class="number-donuts" type="text" value="0">
+                        <div class="plus">+</div>
+                        <div></div>
+                    </div>
+                    <button class="btn">Add to cart</button>
+                    <a href="cart.html"><button class="btn">Go to cart</button></a>
+                </div>
+            </div>
+            <div class="slider">
+                <div class="slider-items">
+                    <img class="item" src="../Images/apple.jpg" alt="choose your donut or go to store">
+                    <h4 class="donut-name">Apple Pie</h4>
+                    <div class="cart-add">
+                        <div class="less">-</div>
+                        <input class="number-donuts" type="text" value="0">
+                        <div class="plus">+</div>
+                        <div></div>
+                    </div>
+                    <button class="btn">Add to cart</button>
+                    <a href="cart.html"><button class="btn">Go to cart</button></a>
+                </div>
+            </div>
+            <div class="slider">
+                <div class="slider-items">
+                    <img class="item" src="../Images/boston.jpg" alt="choose your donut or go to store">
+                    <h4 class="donut-name">Boston Cream</h4>
+                    <div class="cart-add">
+                        <div class="less">-</div>
+                        <input class="number-donuts" type="text" value="0">
+                        <div class="plus">+</div>
+                        <div></div>
+                    </div>
+                    <button class="btn">Add to cart</button>
+                    <a href="cart.html"><button class="btn">Go to cart</button></a>
+                </div>
+            </div>
+            <div class="slider">
+                <div class="slider-items">
+                    <img class="item" src="../Images/blue.jpg" alt="choose your donut or go to store">
+                    <h4 class="donut-name">Blueberries</h4>
+                    <div class="cart-add">
+                        <div class="less">-</div>
+                        <input class="number-donuts" type="text" value="0">
+                        <div class="plus">+</div>
+                        <div></div>
+                    </div>
+                    <button class="btn">Add to cart</button>
+                    <a href="cart.html"><button class="btn">Go to cart</button></a>
+                </div>
+            </div>
+            <div class="slider">
+                <div class="slider-items">
+                    <img class="item" src="../Images/white.jpg" alt="choose your donut or go to store">
+                    <h4 class="donut-name">Strawberries and Chocolate</h4>
+                    <div class="cart-add">
+                        <div class="less">-</div>
+                        <input class="number-donuts" type="text" value="0">
+                        <div class="plus">+</div>
+                        <div></div>
+                    </div>
+                    <button class="btn">Add to cart</button>
+                    <a href="cart.html"><button class="btn">Go to cart</button></a>
+                </div>
+            </div>
+            <div class="slider">
+                <div class="slider-items">
+                    <img class="item" src="../Images/yellow.jpg" alt="choose your donut or go to store">
+                    <h4 class="donut-name">Lemon</h4>
+                    <div class="cart-add">
+                        <div class="less">-</div>
+                        <input class="number-donuts" type="text" value="0">
+                        <div class="plus">+</div>
+                        <div></div>
+                    </div>
+                    <button class="btn">Add to cart</button>
+                    <a href="cart.html"><button class="btn">Go to cart</button></a>
+                </div>
+            </div>
+            <div class="slider">
+                <div class="slider-items">
+                    <img class="item" src="../Images/choco.jpg" alt="choose your donut or go to store">
+                    <h4 class="donut-name">Classic Chocolate</h4>
+                    <div class="cart-add">
+                        <div class="less">-</div>
+                        <input class="number-donuts" type="text" value="0">
+                        <div class="plus">+</div>
+                        <div></div>
+                    </div>
+                    <button class="btn">Add to cart</button>
+                    <a href="cart.html"><button class="btn">Go to cart</button></a>
+                </div>
             </div>
     </main>
     <footer class="footer">

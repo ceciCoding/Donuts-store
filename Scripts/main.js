@@ -1,8 +1,9 @@
 const images = ['../Images/pink.jpg', '../Images/blue.jpg', '../Images/yellow.jpg', '../Images/white.jpg', '../Images/boston.jpg', '../Images/apple.jpg', '../Images/choco.jpg'];
 let counter = 0;
-let plus = document.querySelector('.plus');
-let less = document.querySelector('.less');
-let number = document.querySelector('.number-donuts');
+const plus = Array.from(document.querySelectorAll('.plus'));
+const less = Array.from(document.querySelectorAll('.less'));
+const addContainer = document.querySelectorAll('.cart-add');
+// let number = Array.from(document.querySelectorAll('.number-donuts'));
 let numberOfDonuts = 0;
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -10,18 +11,21 @@ document.addEventListener('DOMContentLoaded', () => {
     slide(container);
 });
 
-plus.addEventListener('click', () => {
-    number.value = (numberOfDonuts + 1);
-    numberOfDonuts++;
-});
+// plus.forEach(sign => {
+//     addEventListener('click', () => {
+//         let number = this.querySelector('.less');
+//         number.value = (numberOfDonuts + 1);
+//         numberOfDonuts++;
+//     })   
+// });
 
-less.addEventListener('click', () => {
-    if (number.value <= 0) return;
-    else {
-        number.value = (numberOfDonuts - 1);
-        numberOfDonuts--;
-    }
-});
+// less.addEventListener('click', () => {
+//     if (number.value <= 0) return;
+//     else {
+//         number.value = (numberOfDonuts - 1);
+//         numberOfDonuts--;
+//     }
+// });
 
 function slide(container) {
     container.addEventListener('click', e => {
@@ -50,3 +54,26 @@ function slide(container) {
     });
 }
 
+//burger menu functionality
+const openBurgerButton = document.querySelector('.burger');
+const closeBurgerButton = document.querySelector('.cross');
+const burgerMenu = document.querySelector('.burger-menu');
+
+openBurgerButton.addEventListener('click', () => {
+    openBurger(openBurgerButton);
+});
+
+
+closeBurgerButton.addEventListener('click', () => {
+    closeBurger(closeBurgerButton);
+});
+
+function openBurger(burger) {
+    if (burger === null) return;
+    burgerMenu.classList.add('active');
+}
+
+function closeBurger(burger) {
+    if (burger === null) return;
+    burgerMenu.classList.remove('active')
+}
