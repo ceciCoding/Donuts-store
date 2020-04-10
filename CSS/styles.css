@@ -3,6 +3,7 @@
     --brand-brown: #7E4141;
     --brand-green: #6BCCBF;
     --buttons-hover: #52A297;
+    --error-red: #E84343;
     --main-font: 'Roboto', sans-serif;
     --secondary-font: 'Sansita', sans-serif;
     font-family: var(--main-font);
@@ -121,17 +122,18 @@ h1 {
 
 main {
     margin: 1.5rem;
-    min-height: 40vh;
+    min-height: 48vh;
 }
 
 .hero {
     width: 100vw;
-    height: 80vh;
+    height: 70vh;
     background-image: url("../Images/falling-powder.jpg");
     background-size: cover; 
     border-radius: 8px;
     top: 0; 
     transform: translateY(-50vw);
+    margin-bottom: 2rem;
 }
 
 .about {
@@ -148,7 +150,7 @@ main {
 }
 
 .welcome {
-    transform: translateY(-50vw);
+    transform: translateY(-50vw); 
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
@@ -179,7 +181,7 @@ main {
 }
 
 .section {
-    transform: translateY(-50vw);
+    transform: translateY(-50vw); 
     margin-top: 4.5rem;
 }
 
@@ -304,10 +306,6 @@ main {
     margin: 0;
 }
 
-.bradcrumbs {
-    transform: translateY(-4rem); 
-}
-
 .bradcrumbs > * {
     font-size: .5rem;
     color: var(--brand-brown);
@@ -315,6 +313,50 @@ main {
     display: inline;
 }
 
+.bread-about {
+    transform: translateY(-4rem); 
+}
+
 .about-us {
-    transform: translateY(-15rem);
+    transform: translateY(-15rem); 
+}
+
+.contact-form {
+    margin-top: 2rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    border: 1px solid var(--brand-brown);
+    border-radius: 10px;
+    margin-top: .5rem;
+    padding: .8rem;
+}
+
+.contact-form input {
+    height: 2.5rem;
+}
+
+.contact-form div {
+    display: flex;
+    flex-flow: column nowrap;
+    margin-top: 1.5rem;
+}
+
+.contact-form label  {
+    font-size: .8rem;
+}
+
+.contact-form [type="email"] {
+    color: var(--brand-brown);
+}
+
+/* .contact-form [type="email"]:invalid {
+    color: var(--error-red);
+} */
+
+.contact-form textarea {
+    color: var(--brand-brown);
+    font-family: var(--main-font);
+    font-size: .8rem;
 }
