@@ -375,7 +375,12 @@ main {
     }
 
     .nav {
-    height: 10rem;
-    border-radius: 0 0 10vw 10vw; 
+        height: 7rem;
+        border-radius: 0 0 70%  70%;
+    }
+
+    .footer {
+        height: 7rem;
+        border-radius: 70%  70% 0 0;
     }
 }
