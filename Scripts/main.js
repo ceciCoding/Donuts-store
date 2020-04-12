@@ -1,40 +1,34 @@
 const images = ['../Images/pink.jpg', '../Images/blue.jpg', '../Images/yellow.jpg', '../Images/white.jpg', '../Images/boston.jpg', '../Images/apple.jpg', '../Images/choco.jpg'];
-let counter = 0;
-const plus = Array.from(document.querySelectorAll('.plus'));
-const less = Array.from(document.querySelectorAll('.less'));
-const addContainer = document.querySelectorAll('.cart-add');
-// let number = Array.from(document.querySelectorAll('.number-donuts'));
-let numberOfDonuts = 0;
+const cartAddContainer = Array.from(document.querySelectorAll('.cart-add'));
 
+cartAddContainer.forEach(elem => {
+    let input = elem.querySelector('.number-donuts');
+    let plus = elem.querySelector('.plus');
+    let less = elem.querySelector('.less');
+    plus.addEventListener('click', () => input.value++);
+    less.addEventListener('click', () => {
+        if (input.value === '0') return;
+        else input.value--;
+    })
+});
+
+//images slider on homepage functionality
 document.addEventListener('DOMContentLoaded', () => {
     let container = document.querySelector('.slider');
     slide(container);
 });
 
-// plus.forEach(sign => {
-//     addEventListener('click', () => {
-//         let number = this.querySelector('.less');
-//         number.value = (numberOfDonuts + 1);
-//         numberOfDonuts++;
-//     })   
-// });
-
-// less.addEventListener('click', () => {
-//     if (number.value <= 0) return;
-//     else {
-//         number.value = (numberOfDonuts - 1);
-//         numberOfDonuts--;
-//     }
-// });
-
 function slide(container) {
+    let counter = 0;
     container.addEventListener('click', e => {
         const backArrow = container.querySelector('.back-arrow');
         const forwardArrow = container.querySelector('.forward-arrow');
         let img = container.querySelector('img');
         let target = e.target;
+        let input = document.querySelector('.number-donuts');
         
         if (target === backArrow) {
+             input.value = 0;
             if (counter > 0) {
                 img.src = images[counter - 1];
                 counter--;
@@ -43,6 +37,7 @@ function slide(container) {
                 counter = images.length - 1;
             }
         } else if (target === forwardArrow) {
+            input.value = 0;
             if (counter < images.length - 1) {
                 img.src = images[counter + 1];
                 counter++;
@@ -77,3 +72,4 @@ function closeBurger(burger) {
     if (burger === null) return;
     burgerMenu.classList.remove('active')
 }
+
