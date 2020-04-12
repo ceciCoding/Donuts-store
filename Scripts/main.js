@@ -1,6 +1,7 @@
 const images = ['../Images/pink.jpg', '../Images/blue.jpg', '../Images/yellow.jpg', '../Images/white.jpg', '../Images/boston.jpg', '../Images/apple.jpg', '../Images/choco.jpg'];
 const cartAddContainer = Array.from(document.querySelectorAll('.cart-add'));
 
+//handle plus and less signs in store elements
 cartAddContainer.forEach(elem => {
     let input = elem.querySelector('.number-donuts');
     let plus = elem.querySelector('.plus');

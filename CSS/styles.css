@@ -5,7 +5,6 @@
     --brand-brown: #7E4141;
     --brand-green: #6BCCBF;
     --buttons-hover: #52A297;
-    --error-red: #E84343;
     --main-font: 'Roboto', sans-serif;
     --secondary-font: 'Sansita', sans-serif;
     font-family: var(--main-font);
@@ -117,6 +116,10 @@ h1 {
 
 .hours {
     margin-right: 2rem;
+}
+
+.hours li:first-child {
+    font-weight: bold;
 }
 
 .footer-links li {
@@ -363,4 +366,16 @@ main {
 .donut-name {
     font-family: var(--secondary-font);
     text-align: center;
+}
+
+/*desktop  styles*/
+@media (min-width: 500px) {
+    .burger {
+        display: none;
+    }
+
+    .nav {
+    height: 10rem;
+    border-radius: 0 0 10vw 10vw; 
+    }
 }
