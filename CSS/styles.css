@@ -5,6 +5,7 @@
     --brand-brown: #7E4141;
     --brand-green: #6BCCBF;
     --buttons-hover: #52A297;
+    --buttons-hover-desktop: #F55DA2;
     --main-font: 'Roboto', sans-serif;
     --secondary-font: 'Sansita', sans-serif;
     font-family: var(--main-font);
@@ -126,11 +127,6 @@ h1 {
     margin-top: .9rem;
 }
 
-main {
-    margin: 1.5rem;
-    min-height: 48vh;
-}
-
 .hero {
     width: 100vw;
     height: 70vh;
@@ -184,6 +180,10 @@ main {
 .btn:active {
     transform: scale(.95);
     transition: transform .3s;
+}
+
+.desktop-woman {
+    display: none;
 }
 
 .section {
@@ -301,6 +301,7 @@ main {
 
 .comment {
     margin-top: 3.5rem;
+    margin: 1.5rem;
 }
 
 .comment-data {
