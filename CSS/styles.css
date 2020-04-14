@@ -45,7 +45,6 @@ h1 {
 
 .nav { 
     border-radius: 0 0 50vw 50vw; 
-    position: absolute;
     top: 0; 
     position: sticky; 
 }
@@ -127,15 +126,20 @@ h1 {
     margin-top: .9rem;
 }
 
+.main {
+    margin: 2rem;
+}
+
 .hero {
-    width: 100vw;
     height: 70vh;
-    background-image: url("../Images/falling-powder.jpg");
-    background-size: cover; 
     border-radius: 8px;
     top: 0; 
     transform: translateY(-50vw);
     margin-bottom: 2rem;
+}
+
+.hero img {
+    width: 100%;
 }
 
 .about {
@@ -313,6 +317,10 @@ h1 {
     margin: 0;
 }
 
+.breadcrumbs {
+    margin: 1.5rem;
+}
+
 .bradcrumbs > * {
     font-size: .5rem;
     color: var(--brand-brown);
@@ -329,7 +337,7 @@ h1 {
 }
 
 .contact-form {
-    margin-top: 2rem;
+    margin: 2rem;
 }
 
 .contact-form input,
@@ -369,8 +377,12 @@ h1 {
     text-align: center;
 }
 
+.desktop-menu {
+    display: none;
+}
+
 /*desktop  styles*/
-@media (min-width: 500px) {
+@media (min-width: 750px) {
     .burger {
         display: none;
     }
@@ -384,4 +396,44 @@ h1 {
         height: 7rem;
         border-radius: 70%  70% 0 0;
     }
+
+    .desktop-menu {
+        display: flex;
+        list-style: none;       
+        font-family: var(--secondary-font);
+        text-transform: uppercase;
+        position: absolute;
+        font-size: 1.2rem;
+    }
+
+    .desktop-menu li a{
+        color: white;
+        text-decoration: none;
+    }
+
+    .desktop-menu li {
+        margin: 1rem;
+    }
+
+    .desktop-menu:first-of-type {
+        top: .1rem;
+        left: 25%;
+    }
+
+    .desktop-menu:last-of-type {
+        top: .1rem;
+        right: 20%;
+    }
+
+}
+
+@media print {
+    p,
+    h1,
+    h2,
+    h3 {
+        widows: 3;
+        orphans: 3;
+    }
+    
 }

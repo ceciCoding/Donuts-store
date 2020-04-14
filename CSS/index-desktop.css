@@ -1,24 +1,23 @@
 @import 'styles.css';
 
-@media (min-width: 500px){
+@media (min-width: 750px){
     body{
         width: 100vw;       
     }
 
     .desktop-grid {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 600px 400px 500px 500px;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 500px 500px 400px 500px;
     }
 
     .hero {
         grid-row: 1/2;
-        grid-column: 2/4;
-        transform: translateY(-10%);
-        width: 100%;
-        min-height: 1000px;
-        background-repeat: no-repeat;
-        border-radius: 0;
+        grid-column: 4/6;
+        transform: translateY(0); 
+        width: auto;
+        align-self: stretch;
+        transform: translateY(-12%);
     }
 
     .slider {
@@ -30,21 +29,23 @@
     }
 
     .welcome {
-        grid-column: 1/2;
+        grid-column: 1/4;
         grid-row: 1/2;
         align-self: center;
-        margin-top: -5rem;
-        transform: translateY(0);
-        min-width: 400px;
+        transform: translateY(-10%);
+        /* min-width: 400px; */
+        align-self: flex-start;
+        margin-top: 3rem; 
     }
 
     .why {
+        margin: 2rem;
         grid-row: 3/4;
-        grid-column: 1/4;
+        grid-column: 1/6;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 100px auto;
-        transform: translateY(-15%);
+        /* transform: translateY(-15%); */
     }
 
     .why h1,
@@ -66,13 +67,18 @@
         grid-column: 2/3;
     }
 
+    .why-item:nth-of-type(3) {
+        grid-column: 3/4;
+    }
+
     .comments {
+        margin-left: 2rem;
         grid-row: 4/5;
-        grid-column: 1/4;
+        grid-column: 1/6;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 100px auto;
-        transform: translateY(-15%);
+        /* transform: translateY(-15%); */
     }
 
     .comment {
@@ -82,8 +88,8 @@
     .desktop-woman {
         display: block;
         grid-row: 2/3;
-        grid-column: 1/4;
-        transform: translateY(-15%);
+        grid-column: 1/6;
+        /* transform: translateY(-15%);  */
         background-image: url("../Images/desktop-woman.jpg");
         background-repeat: no-repeat;
         background-size: cover;
@@ -99,7 +105,7 @@
         justify-content: center;
         align-items: center;
         font-family: var(--secondary-font);
-        line-height: 2rem;
+        line-height: 2.2rem;
         margin: 2rem;
         text-align: center;
     }
@@ -111,4 +117,20 @@
     .btn:hover {
         background-color: var(--buttons-hover-desktop);
     }
+}
+
+@media (min-width: 1000px) {
+    .welcome {
+        align-self: center;
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 1252px) {
+    .desktop-woman{
+        transform: translateY(-15%); 
+        
+    }    
+    
+
 }
