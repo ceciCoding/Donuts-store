@@ -321,7 +321,7 @@ h1 {
     margin: 1.5rem;
 }
 
-.bradcrumbs > * {
+.breadcrumbs > * {
     font-size: .5rem;
     color: var(--brand-brown);
     text-decoration: none;
@@ -423,6 +423,10 @@ h1 {
     .desktop-menu:last-of-type {
         top: .1rem;
         right: 20%;
+    }
+
+    .main {
+        min-height: 60vh;
     }
 
 }

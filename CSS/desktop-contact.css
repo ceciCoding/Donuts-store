@@ -9,7 +9,7 @@
     }
 
     .contact-form {
-        width: 30rem;
+        width: 100%;
         grid-column: 2/4;
         margin: 0 auto;
         margin-top: 3rem;

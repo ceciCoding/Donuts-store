@@ -86,7 +86,7 @@
     }
     
     .desktop-woman {
-        display: block;
+        display: flex;
         grid-row: 2/3;
         grid-column: 1/6;
         /* transform: translateY(-15%);  */
@@ -95,6 +95,7 @@
         background-size: cover;
         position: relative;
         overflow: hidden;
+        align-items: center;
     }
 
     .desktop-text {
