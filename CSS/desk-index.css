@@ -1,0 +1,81 @@
+@import 'main.css';
+
+@media (min-width: 700px) {
+    .main {
+        grid-template-areas: 
+        "wel wel hero hero hero"
+        "wom wom wom wom wom"
+        "why why why why why"
+        "com com com com com";
+        overflow: hidden;
+        transform: translateY(0);
+        margin-bottom: 10rem;
+    }
+
+
+    .hero {
+        grid-area: hero;  
+        overflow: hidden;
+        height: 100%;
+        width: 100%;
+    }
+
+    .hero img {
+        display: block;
+        height: 100%;
+        width: 100%;
+    }
+
+    .welcome {
+        grid-area: wel;
+        align-self: center;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .desktop-woman {
+        display: flex;
+        grid-area: wom;
+        background-image: url("../Images/desktop-woman.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        align-items: center;
+        height: 450px;
+        position: relative;
+        margin-top: 0;
+    }
+
+    .desktop-text {
+        position: absolute;
+        font-family: var(--secondary-font);
+        text-align: center;
+        line-height: 2.5rem;
+        left: 60%;
+        right: 1rem;
+    }
+
+    .why {
+        grid-area: why;
+    }
+
+    .why-items {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .comments-items {
+        display: flex;
+    }
+
+    .comments {
+        grid-area: com;
+    }
+
+    .btn {
+        background-color: var(--brand-main);
+    }
+
+    .btn:hover {
+        background-color: var(--buttons-hover-desktop);
+    }
+}

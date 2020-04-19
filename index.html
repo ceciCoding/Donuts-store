@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Roboto|Sansita&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="CSS/main.css">
     <link rel="stylesheet" href="CSS/menu.css">
-    <link rel="stylesheet" href="CSS/index-desktop.css">
-    <title>Donuts Heaven</title>
+    <link rel="stylesheet" href="CSS/desk-index.css">
+    <title>Donuts Store</title>
 </head>
 <body>
     <nav class="nav">
@@ -63,103 +62,106 @@
             <li><a href="Pages/cart.html">Cart</a></li>
         </ul>
     </div>
-    <section class="desktop-grid">
-            <div class="hero">
-                <picture>
-                    <source srcset="Images/falling-powder-big.jpg" media="(min-width: 600px)">
-                    <img src="Images/falling-powder.jpg" alt="filled donuts being made">
-                </picture>
-            </div>
-            <section class="welcome paragraph">
-                <h1>Welcome to Donuts Heaven</h1>
-                <p>All our donuts are 100% natural y handmade. 
-                We prepare them every morning with love and dedication 
-                with the best ingredients so that every bite is an explosion 
-                of flavour in your mouth. 
-                They definitely won’t leave you indifferent. </p>
-                <a href="Pages/store.html"><button class="btn">Go to store</button></a>
-            </section>
-            <section class="section slider">
-                <h1>Choose your favourite</h1>
-                <div class="slider">
-                    <div class="back-arrow">&#60</div>
-                    <div class="slider-items">
-                        <img class="item" src="Images/pink.jpg" alt="choose your donut or go to store">
-                        <div class="cart-add">
-                            <div class="less">-</div>
-                            <input class="number-donuts" type="text" value="0" onclick="this.focus();this.select()">
-                            <div class="plus">+</div>
-                            <div></div>
-                        </div>
-                        <button class="btn" >Add to cart</button>
-                        <a href="Pages/store.html"><button class="btn">Go to store</button></a>
-                    </div>
-                    <div class="forward-arrow">&#62</div>
-                </div>
-            </section>
-            <section class="desktop-woman">
-                <div class="desktop-text">
-                    <h2>Choose your favourite donuts
-                        and let us take them wherever
-                        you are or come pick them up. 
-                        Don’t miss on the best donuts 
-                        in town. </h2>
-                        <button class="btn">Go to Store</button>
-                </div>
-            </section>
-            <section class="section why">
-                <h1>Why choose us?</h1>
-                <div class="why-item">
-                    <div class="why-svg cook"></div>
-                    <p class="paragraph">We have the best professionals in 
-                    our team. We care about their
-                    job and they care about you.</p>
-                </div>
-                <div class="why-item">
-                    <div class="why-svg money"></div>
-                    <p class="paragraph">All our products are made with 
-                    eco-friendly ingredients.</p>
-                </div>
-                <div class="why-item">
-                    <div class="why-svg eco"></div>
-                    <p class="paragraph">We 
-                    have fair prices for you and
-                    good shares for our
-                    employees.</p>
-                </div>
-            </section>
-            <section class="section comments">
-                <h1>What our clients say about us</h1>
-                <div class="comment">
-                    <div class="comment-data">
-                        <p>Ethan Fox</p>
-                        <div class="stars"></div>
-                    </div>
-                    <p class="date paragraph">27/4/2019</p>
-                    <p>This is the best donuts store I’ve every been to. 
-                    They are super nice and I always feel
-                    confortable there.</p>
-                </div>
-                <div class="comment">
-                    <div class="comment-data">
-                        <p>Debra Nelson</p>
-                        <div class="stars"></div>
-                    </div>
-                    <p class="date paragraph">2/9/2019</p>
-                    <p>I love Donuts Heaven! My orders always arrive
-                    on time and their packages are super cool...</p>
-                </div>
-                <div class="comment">
-                    <div class="comment-data">
-                        <p>Diana Mathews</p>
-                        <div class="stars"></div>
-                    </div>
-                    <p class="date paragraph">9/2/2020</p>
-                    <p>II’ve been buying here for years and they are my 
-                    favorite in town. Totally recommend it.</p>
-                </div>
-            </section>
+    <main class="main index">
+        <section class="hero">
+            <picture>
+                <img src="Images/falling-powder.jpg" alt="jelly-filled just made donuts">
+                <source srcset="Images/falling-powder-big.jpg" media="(min-width: 600px)">
+            </picture>
         </section>
+        <section class="welcome">
+            <h1>Welcome to Donuts Heaven</h1>
+            <p>All our donuts are 100% natural y handmade. 
+            We prepare them every morning with love and dedication 
+            with the best ingredients so that every bite is an explosion 
+            of flavour in your mouth. 
+            They definitely won’t leave you indifferent. </p>
+            <a href="Pages/store.html"><button class="btn">Go to store</button></a>
+        </section>
+        <section class="slider index-slide">
+            <h1>Choose your favourite</h1>
+            <div class="slider pack">
+                <div class="back-arrow">&#60</div>
+                <div class="product-card">
+                    <img class="product-image" src="Images/pink.jpg" alt="choose your donut or go to store">
+                    <div class="cart-add">
+                        <div class="less">-</div>
+                        <input class="number-donuts" type="text" value="0" onclick="this.focus();this.select()">
+                        <div class="plus">+</div>
+                        <div></div>
+                    </div>
+                    <button class="btn" >Add to cart</button>
+                    <a href="Pages/store.html"><button class="btn">Go to store</button></a>
+                </div>
+                <div class="forward-arrow">&#62</div>
+            </div>
+        </section>
+        <section class="desktop-woman">
+                <div class="desktop-text">
+                    <h2>Choose your favourite donuts,
+                        let us take them wherever
+                        you are or come pick them up. 
+                        </h2> <h2>Don’t miss on the best donuts 
+                        in town. </h2>
+                        <a href="Pages/store.html"><button class="btn">Go to Store</button></a>
+                </div>
+            </section>
+        <section class="why">
+                <h1>Why choose us?</h1>
+                <div class="why-items">
+                    <div class="why-item">
+                        <div class="why-svg cook"></div>
+                        <p>We have the best professionals in 
+                        our team who care about doing their best.</p>
+                    </div>
+                    <div class="why-item">
+                        <div class="why-svg money"></div>
+                        <p>All our products are made with 
+                        eco-friendly ingredients.</p>
+                    </div>
+                    <div class="why-item">
+                        <div class="why-svg eco"></div>
+                        <p>We 
+                        have fair prices for you and
+                        good shares for 
+                        employees.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="comments">
+                <h1>What our clients say about us</h1>
+                <div class="comments-items">
+                    <div class="comment">
+                        <div class="comment-data">
+                            <p>Ethan Fox</p>
+                            <div class="stars"></div>
+                        </div>
+                        <p class="date">27/4/2019</p>
+                        <p>This is the best donuts store I’ve every been to. 
+                        They are super nice and I always feel
+                        confortable there.</p>
+                    </div>
+                    <div class="comment">
+                        <div class="comment-data">
+                            <p>Debra Nelson</p>
+                            <div class="stars"></div>
+                        </div>
+                        <p class="date">2/9/2019</p>
+                        <p>I love Donuts Heaven! My orders always arrive
+                        on time and their packages are super cool...</p>
+                    </div>
+                    <div class="comment">
+                        <div class="comment-data">
+                            <p>Diana Hill</p>
+                            <div class="stars"></div>
+                        </div>
+                        <p class="date">9/2/2020</p>
+                        <p>II’ve been buying here for years and they are my 
+                        favorite in town. Totally recommend it.</p>
+                    </div>
+                </div>
+            </section>
+    </main>
     <footer class="footer">
         <ul class="footer-links">
             <li>
@@ -172,7 +174,7 @@
                 <a href="Pages/about-us.html">About us</a>
             </li>
         </ul>
-        <div class="social foot">
+        <div class="social">
                 <div class="facebook">
                     <a href="https://facebook.com" target="_blank">
                         <svg height="2rem" version="1.1" viewBox="0 0 50 50" width="2rem" xmlns="http://www.w3.org/2000/svg" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" xmlns:xlink="http://www.w3.org/1999/xlink"><title/><defs/><g fill="none" fill-rule="evenodd" stroke="none" stroke-width="1"><g fill="#fff"><path d="M25,50 C38.8071194,50 50,38.8071194 50,25 C50,11.1928806 38.8071194,0 25,0 C11.1928806,0 0,11.1928806 0,25 C0,38.8071194 11.1928806,50 25,50 Z M25,47 C37.1502651,47 47,37.1502651 47,25 C47,12.8497349 37.1502651,3 25,3 C12.8497349,3 3,12.8497349 3,25 C3,37.1502651 12.8497349,47 25,47 Z M26.8145197,36 L26.8145197,24.998712 L30.0687449,24.998712 L30.5,21.2076072 L26.8145197,21.2076072 L26.8200486,19.3101227 C26.8200486,18.3213442 26.9207209,17.7915341 28.4425538,17.7915341 L30.4769629,17.7915341 L30.4769629,14 L27.2222769,14 C23.3128757,14 21.9368678,15.8390937 21.9368678,18.9318709 L21.9368678,21.2080366 L19.5,21.2080366 L19.5,24.9991413 L21.9368678,24.9991413 L21.9368678,36 L26.8145197,36 Z M26.8145197,36" id="Oval-1"/></g></g></svg>

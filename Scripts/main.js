@@ -15,7 +15,7 @@ cartAddContainer.forEach(elem => {
 
 //images slider on homepage functionality
 document.addEventListener('DOMContentLoaded', () => {
-    let container = document.querySelector('.slider');
+    let container = document.querySelector('.pack');
     slide(container);
 });
 
@@ -49,5 +49,3 @@ function slide(container) {
         };
     });
 }
-
-

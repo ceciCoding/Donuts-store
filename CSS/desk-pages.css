@@ -1,0 +1,66 @@
+@import 'styles.css';
+
+@media (min-width: 700px) {
+
+    .main {
+        max-width: 100vw;
+        transform: translateY(10rem);
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin-bottom: 12rem;
+    }
+
+    .pack:first-of-type {
+        grid-column: 1/3;
+    }
+
+   .pack {
+       grid-column: span 2;
+   }
+
+    .main > p {
+        grid-column: span 2;
+        margin-top: 5rem;
+    }
+
+    .product-card {
+        width: 100%
+    }
+
+    .contact-form  {
+        grid-column: span 2;
+    }
+
+    .hero  {
+        grid-column: 1/3;
+        /* grid-row: 1/2; */
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+
+    .hero img {
+        width: 100%;
+        margin-top: 4rem;
+    }
+
+    .about-us {
+        grid-column: 3/5;
+        margin-right: 5rem;
+    }
+
+}
+
+/******************************
+Size of donuts in wide screens
+*******************************/
+@media (min-width: 1500px) {
+    .product-image {
+        min-width: 280px;
+        min-height: 280px;
+    }
+
+    .donut-name {
+        font-size: 1.5rem;
+    }
+}

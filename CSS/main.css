@@ -1,5 +1,6 @@
-@import "menu.css";
-
+/***************************************
+Declaration of variables and tags reset
+****************************************/
 :root {
     --brand-main: #EF73AB;
     --brand-brown: #7E4141;
@@ -25,7 +26,13 @@
 
 body {
     margin: 0;
-    min-height: 100vh;
+}
+
+a, 
+ul {
+    text-decoration: none;
+    color: #fff;
+    list-style: none;
 }
 
 h1 {
@@ -33,20 +40,51 @@ h1 {
     text-align: center;
 }
 
+p {
+    text-align: center;
+    line-height: 1.8rem;
+    margin: 1.5rem;
+}
+
+section {
+    margin-top: 4rem;
+}
+
+span {
+    font-weight: bold;
+}
+/***********************
+Navigaton Bar and Footer 
+************************/
 .nav,
 .footer {
     background-color: var(--brand-main);
     width: 100vw;
     height: 50vw; 
-    margin: 0 auto;
     padding: 1rem;
     z-index: 10;
 }
 
-.nav { 
+.nav {
+    position: fixed;
     border-radius: 0 0 50vw 50vw; 
-    top: 0; 
-    position: sticky; 
+    top: 0;
+}
+
+.desktop-menu {
+    display: none;
+}
+
+.cart-menu {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    display: flex;
+}
+
+.cart > a > svg {
+    fill: #fff;
+    margin-right: .7rem;
 }
 
 .logo > a > svg {
@@ -62,60 +100,25 @@ h1 {
 }
 
 .social {
-    position: absolute;
-    display: flex;   
-}
-
-.social > *,
-.cart-menu > * {
-    margin-right: .5rem;
-}
-
-.cart-menu {
-    position: absolute;
-    right: 0;
     display: flex;
-}
-
-.cart > a > svg {
-    fill: white;
-    margin-right: .7rem;
-}
-
-.footer {
-    bottom: 0;
-    border-radius: 50vw 50vw 0 0; 
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-end;
-} 
-
-.footer ul,
-.footer-links a {
-    color: white;
-    list-style: none;
-    text-decoration: none;
-    font-size: .5rem;
-}
-
-.footer ul a {
-    margin-top: 2rem;
-}
-
-.footer ul {
-    line-height: .9rem;
-}
-
-.foot {
     align-self: flex-start;
 }
 
-.footer-links {
-    margin-left: 2rem;
+.social div {
+    margin-right: .5rem;
 }
 
-.hours {
-    margin-right: 2rem;
+.footer {
+    border-radius: 50vw 50vw 0 0; 
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.footer ul {
+    font-size: .5rem;
+    line-height: 1rem;
+    color: #fff; 
 }
 
 .hours li:first-child {
@@ -124,45 +127,49 @@ h1 {
 
 .footer-links li {
     margin-top: .9rem;
+    margin-left: 1.2rem;
 }
 
+/***********
+Main section
+************/
 .main {
-    margin: 2rem;
+    min-height: calc(100vh - 100vw);
+    transform: translateY(50vw);
+    margin-bottom: 60vw;
+}
+
+.index,
+.about {
+    transform: translateY(-10vw);
 }
 
 .hero {
-    height: 70vh;
-    border-radius: 8px;
-    top: 0; 
-    transform: translateY(-50vw);
-    margin-bottom: 2rem;
+    margin: 0;
 }
 
 .hero img {
-    width: 100%;
-}
-
-.about {
-    background-image: url("../Images/about-us.jpg");
-}
-
-.paragraph {
-    text-align: center;
-    line-height: 1.8rem;
-}
-
-.paragraph span {
-    font-weight: bold;
+    width: 100vw;
 }
 
 .welcome {
-    transform: translateY(-50vw); 
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: column;
     align-items: center;
-    margin: 1.5rem;
+    margin-top: 1rem;
 }
 
+.about-us {
+    margin-top: 1rem;
+}
+
+.desktop-woman {
+    display: none;
+}
+
+/*******
+Buttons 
+********/
 .btn {
     color: #fff;
     background-color: var(--brand-green);
@@ -186,15 +193,9 @@ h1 {
     transition: transform .3s;
 }
 
-.desktop-woman {
-    display: none;
-}
-
-.section {
-    transform: translateY(-50vw); 
-    margin-top: 4.5rem;
-}
-
+/***********************
+Product Card and Slider
+************************/
 .slider {
     display: flex;
     justify-content: space-evenly;
@@ -207,8 +208,8 @@ h1 {
     cursor: pointer;
 }
 
-.slider-items {
-    width: 80%;
+.product-card {
+    width: 70vw;
     padding: 1.5rem;
     margin: 1rem;
     display: flex;
@@ -219,7 +220,7 @@ h1 {
     box-shadow: 0px 5px 12px 0px rgba(204,204,204,1);
 }
 
-.item {
+.product-image {
     width: 170px;
     height: 170px;
 }
@@ -261,6 +262,14 @@ h1 {
     background-repeat: no-repeat;
 }
 
+.donut-name {
+    font-family: var(--secondary-font);
+    text-align: center;
+}
+
+/********************
+Why choose us section
+*********************/
 .why-item {
     display: flex;
     flex-flow: column nowrap;
@@ -284,16 +293,20 @@ h1 {
     background-image: url("../Images/eco.svg");
     height: 4rem;
     width: 3rem;
+    margin-top: 2.5rem;
 }
 
 .money {
     background-image: url("../Images/money.svg");
 }
 
+/****************
+Comments Section
+*****************/
 .stars {
     height: 1rem;
     width: 5.2rem;
-    margin-left: 1rem;
+    margin-left: .5rem;
     background-image: url("../Images/star.svg");    
 }
 
@@ -304,8 +317,12 @@ h1 {
 }
 
 .comment {
-    margin-top: 3.5rem;
     margin: 1.5rem;
+    margin-top: 3.5rem;
+}
+
+.comment p {
+    text-align: left;
 }
 
 .comment-data {
@@ -313,12 +330,16 @@ h1 {
     align-items: center;
 }
 
-.comment-data p {
+.comment p {
     margin: 0;
 }
 
-.breadcrumbs {
-    margin: 1.5rem;
+/***********
+Breadcrumbs
+***********/
+.breadcrumbs{
+    margin-left: 1rem;
+    margin-top: .5rem;
 }
 
 .breadcrumbs > * {
@@ -326,16 +347,12 @@ h1 {
     color: var(--brand-brown);
     text-decoration: none;
     display: inline;
+    margin: 0;    
 }
 
-.bread-about {
-    transform: translateY(-4rem); 
-}
-
-.about-us {
-    transform: translateY(-15rem); 
-}
-
+/************
+Contact Form
+*************/
 .contact-form {
     margin: 2rem;
 }
@@ -377,12 +394,10 @@ h1 {
     text-align: center;
 }
 
-.desktop-menu {
-    display: none;
-}
-
-/*desktop  styles*/
-@media (min-width: 750px) {
+/*********************
+Desktop shared styles
+**********************/
+@media (min-width: 700px) {
     .burger {
         display: none;
     }
@@ -395,6 +410,9 @@ h1 {
     .footer {
         height: 7rem;
         border-radius: 70%  70% 0 0;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 2rem;
     }
 
     .desktop-menu {
@@ -426,18 +444,13 @@ h1 {
     }
 
     .main {
-        min-height: 60vh;
+        width: 100vw;
+        min-height: calc(100vh - 14rem);
+        display: grid;
     }
 
-}
-
-@media print {
-    p,
-    h1,
-    h2,
-    h3 {
-        widows: 3;
-        orphans: 3;
+    .index-slide {
+        display: none;
     }
-    
+
 }

@@ -9,8 +9,8 @@
     position: fixed;
     right: 0;
     transform: scale(0);
-    clip-path: polygon(29% 0, 100% 0, 100% 100%, 0% 100%);
-    -webkit-clip-path: polygon(29% 0, 100% 0, 100% 100%, 0% 100%);
+    -webkit-clip-path: polygon(32% 0, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(32% 0, 100% 0, 100% 100%, 0 100%);
 }
 
 .cross svg{
@@ -19,7 +19,7 @@
     width: 1.5rem;
     height: 1.5rem;
     stroke-width: .2rem;
-    right: 1rem;
+    right: 1.5rem;
     top: 1rem;
     position: absolute;
 }
@@ -45,3 +45,4 @@
 .burger-menu.active {
     transform: scale(1);
 }
+
