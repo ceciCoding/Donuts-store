@@ -11,6 +11,10 @@
     transform: scale(0);
     -webkit-clip-path: polygon(32% 0, 100% 0, 100% 100%, 0 100%);
     clip-path: polygon(32% 0, 100% 0, 100% 100%, 0 100%);
+    /* transform-origin: 0% 0%; */
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    transform: translate(0%, -100%);
+    -webkit-font-smoothing: antialiased;
 }
 
 .cross svg{
@@ -31,7 +35,7 @@
 
 .burger-menu ul {
     margin-top: 4rem;
-    margin-left: 4rem;
+    margin-left: 5rem;
 }
 
 .burger-menu a {

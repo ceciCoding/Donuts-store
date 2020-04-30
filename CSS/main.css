@@ -355,6 +355,8 @@ Contact Form
 *************/
 .contact-form {
     margin: 2rem;
+    display: flex;
+    flex-flow: column nowrap;
 }
 
 .contact-form input,
@@ -389,6 +391,10 @@ Contact Form
     font-size: .8rem;
 }
 
+.contact-form div:last-child {
+    align-self: center;
+}
+
 .donut-name {
     font-family: var(--secondary-font);
     text-align: center;
@@ -413,6 +419,7 @@ Desktop shared styles
         justify-content: space-evenly;
         align-items: center;
         margin-top: 2rem;
+        bottom: 0;
     }
 
     .desktop-menu {
