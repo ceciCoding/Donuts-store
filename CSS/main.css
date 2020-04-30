@@ -107,7 +107,13 @@ Navigaton Bar and Footer
 }
 
 .social div {
-    margin-right: .5rem;
+    margin: .25rem;
+}
+
+.social div:hover,
+.cart:hover {
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    transform: scale(1.1);
 }
 
 .footer {
