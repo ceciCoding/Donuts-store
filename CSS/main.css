@@ -1,3 +1,10 @@
+/*TODO: 
+*Fix footer for chrome
+*Fix nav for portrait
+*Fix fonts in Safari
+*Make manu animation go left
+*/
+
 @import 'normalize.css';
 
 /***************************************
@@ -27,7 +34,7 @@ Declaration of variables and tags reset
 }
 
 body {
-    margin: 0;
+    min-height: 100%;
 }
 
 a, 
@@ -55,6 +62,7 @@ section {
 span {
     font-weight: bold;
 }
+
 /***********************
 Navigaton Bar and Footer 
 ************************/
@@ -179,6 +187,7 @@ Main section
 Buttons 
 ********/
 .btn {
+    font-family: var(--main-font);
     color: #fff;
     background-color: var(--brand-green);
     padding: .8rem; 
@@ -411,7 +420,7 @@ Contact Form
 /*********************
 Desktop shared styles
 **********************/
-@media (min-width: 700px) {
+@media (min-width: 650px) {
     .burger {
         display: none;
     }
@@ -427,7 +436,7 @@ Desktop shared styles
         justify-content: space-evenly;
         align-items: center;
         margin-top: 2rem;
-        bottom: 0;
+        transform: translateY(3rem);
     }
 
     .desktop-menu {
@@ -459,7 +468,6 @@ Desktop shared styles
     }
 
     .main {
-        width: 100vw;
         min-height: calc(100vh - 14rem);
         display: grid;
     }
