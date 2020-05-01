@@ -1,5 +1,4 @@
 /*TODO: 
-*Fix footer for chrome
 *Fix nav for portrait
 *Fix fonts in Safari
 *Make manu animation go left
@@ -20,6 +19,8 @@ Declaration of variables and tags reset
     --secondary-font: 'Sansita', sans-serif;
     font-family: var(--main-font);
     color: var(--brand-brown);
+    font-style: normal;
+    font-weight: normal;
 }
 
 * {
