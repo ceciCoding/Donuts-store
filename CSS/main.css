@@ -1,8 +1,8 @@
 /*TODO: 
 *Fix nav for portrait
-*Make manu animation go left
 *fix desktop woman in tablet sizes 
 * try to avoid widows
+*fix send button in contact form
 */
 
 @import 'normalize.css';
@@ -384,6 +384,8 @@ Contact Form
     border-radius: 10px;
     margin-top: .5rem;
     padding: .8rem;
+    color: inherit;
+    font-family: inherit;
 }
 
 .contact-form input {
