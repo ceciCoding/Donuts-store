@@ -1,6 +1,5 @@
 /*TODO: 
 *Fix nav for portrait
-*Fix fonts in Safari
 *Make manu animation go left
 */
 
@@ -197,7 +196,6 @@ Buttons
     width: 8rem;
     text-transform: uppercase;
     cursor: pointer;
-    font-weight: bold;
     border: none;
     margin-top: 1rem;
 }
@@ -361,7 +359,7 @@ Breadcrumbs
 }
 
 .breadcrumbs > * {
-    font-size: .5rem;
+    font-size: .8ƒrem;
     color: var(--brand-brown);
     text-decoration: none;
     display: inline;
