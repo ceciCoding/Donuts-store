@@ -1,2 +1,2 @@
 # Donuts-store
-simulation of donuts store
+Simulation of donuts store

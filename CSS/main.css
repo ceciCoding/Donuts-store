@@ -1,6 +1,8 @@
 /*TODO: 
 *Fix nav for portrait
 *Make manu animation go left
+*fix desktop woman in tablet sizes 
+* try to avoid widows
 */
 
 @import 'normalize.css';
@@ -47,6 +49,7 @@ ul {
 h1 {
     font-family: var(--secondary-font);
     text-align: center;
+    margin: .5rem;
 }
 
 p {
@@ -359,7 +362,7 @@ Breadcrumbs
 }
 
 .breadcrumbs > * {
-    font-size: .8ƒrem;
+    font-size: .8rem;
     color: var(--brand-brown);
     text-decoration: none;
     display: inline;
