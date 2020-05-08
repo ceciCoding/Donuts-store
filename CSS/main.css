@@ -1,5 +1,7 @@
 /*TODO: 
-*Fix nav for portrait
+*Fix nav for portrait 
+min-width: 550, max width (765) 
+(font smaller, main in home (translateY(15vh)),  
 *fix desktop woman in tablet sizes 
 * try to avoid widows
 *fix send button in contact form
@@ -104,7 +106,7 @@ Navigaton Bar and Footer
     position: absolute;
     bottom: 1rem; 
     width: 7rem;
-    margin-left: .7rem;
+    /* margin-left: .7rem; */
 }
 
 .logo a {
@@ -424,7 +426,7 @@ Contact Form
 /*********************
 Desktop shared styles
 **********************/
-@media (min-width: 650px) {
+@media (min-width: 550px) {
     .burger {
         display: none;
     }
@@ -463,7 +465,7 @@ Desktop shared styles
 
     .desktop-menu:first-of-type {
         top: .1rem;
-        left: 25%;
+        left: 20%;
     }
 
     .desktop-menu:last-of-type {
@@ -478,6 +480,42 @@ Desktop shared styles
 
     .index-slide {
         display: none;
+    }
+
+}
+
+/*******************************************
+Mobile landscape nav and footer arrangements
+********************************************/
+
+@media (min-width: 550px) and (max-width: 765px) {
+    .desktop-menu li {
+        font-size: .9rem;
+        margin: .5rem;
+    }
+
+    .logo > a > svg{
+        width: 5rem;
+    }
+
+    .social svg,
+    .cart svg {
+        width: 1.5rem;
+    }
+}
+
+/**************************
+Main margin for big screens
+****************************/
+
+@media (min-width: 1920px) {
+    .main {
+        max-width: 65vw;
+        margin: 0 auto;
+    }
+
+    .desktop-menu li {
+        font-size: 1.3rem;
     }
 
 }

@@ -78,3 +78,9 @@
         background-color: var(--buttons-hover-desktop);
     }
 }
+
+@media (min-width: 700px) and (max-width: 830px) {
+    .main {
+        transform: translateY(18vh);
+    }
+}
