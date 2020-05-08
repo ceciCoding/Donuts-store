@@ -69,7 +69,7 @@ Size of donuts in wide screens
     }
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 1800px) {
     .main {
         max-width: 65vw;
     }
