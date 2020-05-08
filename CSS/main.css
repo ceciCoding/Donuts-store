@@ -488,7 +488,7 @@ Desktop shared styles
 Mobile landscape nav and footer arrangements
 ********************************************/
 
-@media (min-width: 550px) and (max-width: 765px) {
+@media (min-width: 550px) and (max-width: 850px) {
     .desktop-menu li {
         font-size: .9rem;
         margin: .5rem;
