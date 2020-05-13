@@ -1,5 +1,4 @@
 /*TODO: 
-* try to avoid widows
 *fix send button in contact form
 */
 
@@ -64,9 +63,9 @@ span {
     font-weight: bold;
 }
 
-/***********************
-Navigaton Bar and Footer 
-************************/
+/**************
+Nav and Footer 
+***************/
 .nav,
 .footer {
     background-color: var(--brand-main);
@@ -136,6 +135,13 @@ Navigaton Bar and Footer
     font-size: .5rem;
     line-height: 1rem;
     color: #fff; 
+}
+
+.footer ul:last-of-type {
+    font-size: .6rem;
+    position: absolute;
+    margin: 0 auto;
+    margin-top: 1.5rem;
 }
 
 .hours li:first-child {
@@ -498,6 +504,12 @@ Mobile landscape nav and footer arrangements
     .cart svg {
         width: 1.5rem;
     }
+}
+
+@media (max-width:550px) {
+    .footer ul:last-of-type {
+        display: none;
+    }
 }
 
 /**************************
