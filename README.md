@@ -23,7 +23,7 @@ The only requirement is to open it in a web browser.
 * [CSS](https://github.com/ceciCoding/Donuts-store/tree/master/CSS)
 
 ## Contributions
-Contributions are welcome 🦄
-
+Contributions are welcome 🦄 <br>
+Feel free to fork and add your stuff! 
 
 
