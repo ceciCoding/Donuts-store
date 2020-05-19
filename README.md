@@ -2,7 +2,7 @@
 
 ## Sections
 * [Description](#Description)
-* [How to Use](#How)
+* [How to Use](#How to use)
 * [Technologies](#Technologies)
 * [Contributions](#Contributions)
 
@@ -14,7 +14,7 @@ This is a simple simulation of a responsive site for a donuts store.<br>
 It has five pages with a simple UI and information arquitecture. It's built with pure CSS and vanilla Javascript. <br>
 The deployment can be seen [here]().
 
-## How to use 
+## How to use
 
 The only requirement is to open it in a web browser.
 
@@ -24,6 +24,4 @@ The only requirement is to open it in a web browser.
 
 ## Contributions
 Contributions are welcome 🦄 <br>
-Feel free to fork and add your stuff! 
-
-
+Feel free to fork and add your stuff!
