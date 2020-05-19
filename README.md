@@ -2,7 +2,7 @@
 
 ## Sections
 * [Description](#Description)
-* [How to Use](#How to use)
+* [How to Use](#How)
 * [Technologies](#Technologies)
 * [Contributions](#Contributions)
 
