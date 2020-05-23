@@ -43,6 +43,11 @@ ul {
     list-style: none;
 }
 
+p > a {
+    color: inherit;
+    text-decoration: underline;
+}
+
 h1 {
     font-family: var(--secondary-font);
     text-align: center;
