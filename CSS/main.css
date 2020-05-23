@@ -43,6 +43,11 @@ ul {
     list-style: none;
 }
 
+p > a {
+    color: inherit;
+    text-decoration: underline;
+}
+
 h1 {
     font-family: var(--secondary-font);
     text-align: center;
@@ -132,7 +137,7 @@ Nav and Footer
 }
 
 .footer ul {
-    font-size: .5rem;
+    font-size: .7rem;
     line-height: 1rem;
     color: #fff; 
 }
