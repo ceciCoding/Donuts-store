@@ -12,7 +12,7 @@
 
 This is a simple simulation of a responsive site for a donuts store.<br>
 It has five pages with a simple UI and information arquitecture. It's built with pure CSS and vanilla Javascript. <br>
-The deployment can be seen [here]().
+The deployment can be seen [here]https://donutsheaven.netlify.app/).
 
 ## How to use
 
