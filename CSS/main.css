@@ -204,6 +204,7 @@ Buttons
     background-color: var(--brand-green);
     padding: .8rem; 
     font-size: .8rem;
+    font-weight: bold;
     border-radius: 30px;
     width: 8rem;
     text-transform: uppercase;

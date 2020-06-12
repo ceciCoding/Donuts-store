@@ -1,3 +1,5 @@
+'use strict';
+
 const images = ['../Images/pink.jpg', '../Images/blue.jpg', '../Images/yellow.jpg', '../Images/white.jpg', '../Images/boston.jpg', '../Images/apple.jpg', '../Images/choco.jpg'];
 const cartAddContainer = Array.from(document.querySelectorAll('.cart-add'));
 

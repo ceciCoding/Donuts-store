@@ -1,3 +1,5 @@
+'use strict';
+
 const openBurgerButton = document.querySelector('.burger');
 const closeBurgerButton = document.querySelector('.cross');
 const burgerMenu = document.querySelector('.burger-menu');
