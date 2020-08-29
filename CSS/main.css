@@ -429,6 +429,7 @@ Contact Form
 .donut-name {
     font-family: var(--secondary-font);
     text-align: center;
+    font-weight: normal;
 }
 
 /*********************
